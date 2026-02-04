@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Links</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 24px;
+      text-align: center;
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 auto 16px;
+    }
+    h1 {
+      font-size: 22px;
+      margin: 8px 0;
+    }
+    p {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 24px;
+    }
+    .link {
+      display: block;
+      background: #ffffff;
+      color: #000;
+      text-decoration: none;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    }
+    .footer {
+      margin-top: 24px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      z-index: 999;
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar"></div>
+    <h1>你的品牌 / 名称</h1>
+    <p>官网 · WhatsApp · 联系方式聚合页</p>
+
+    <!-- 网站链接 -->
+    <a class="link" href="https://www.yourwebsite.com" target="_blank">🌐 访问我的网站</a>
+
+    <!-- WhatsApp 联系方式 -->
+    <a class="link" href="https://wa.me/85253630941" target="_blank">💬 WhatsApp 联系我</a>
+
+    <!-- 你可以继续添加更多链接 -->
+    <!-- <a class="link" href="https://facebook.com">Facebook</a> -->
+
+    <div class="footer">© 2026 Your Brand</div>
+  </div>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/85253630941" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+</body>
+</html>
